@@ -663,6 +663,8 @@ class KallsymsFinder:
         self.kallsyms_markers__offset = position
         
         logging.info('[+] Found kallsyms_markers at file offset 0x%08x' % position)
+
+        self.kallsyms_names__offset = position
         
     
     def find_kallsyms_markers(self):
